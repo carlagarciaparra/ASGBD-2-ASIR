@@ -1,0 +1,18 @@
+;;; 
+Export: Release 18.0.0.0.0 - Production on Wed May 25 08:34:37 2022
+Version 18.3.0.0.0
+
+Copyright (c) 1982, 2018, Oracle and/or its affiliates.  All rights reserved.
+;;; 
+Connected to: Oracle Database 18c Enterprise Edition Release 18.0.0.0.0 - Production
+Starting "JUNIO"."SYS_EXPORT_TABLE_01":  junio/******** directory=exp_imp dumpfile=exportacion.dmp logfile=exportacion.log tables=meter_datos 
+Processing object type TABLE_EXPORT/TABLE/TABLE_DATA
+Processing object type TABLE_EXPORT/TABLE/STATISTICS/TABLE_STATISTICS
+Processing object type TABLE_EXPORT/TABLE/STATISTICS/MARKER
+Processing object type TABLE_EXPORT/TABLE/TABLE
+. . exported "JUNIO"."METER_DATOS"                       5.226 KB      16 rows
+Master table "JUNIO"."SYS_EXPORT_TABLE_01" successfully loaded/unloaded
+******************************************************************************
+Dump file set for JUNIO.SYS_EXPORT_TABLE_01 is:
+  /home/alumno/Desktop/recuperacion/carpeta_exp_imp/exportacion.dmp
+Job "JUNIO"."SYS_EXPORT_TABLE_01" successfully completed at Wed May 25 08:34:59 2022 elapsed 0 00:00:21

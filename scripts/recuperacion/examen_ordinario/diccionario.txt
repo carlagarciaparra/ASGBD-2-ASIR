@@ -1,0 +1,46 @@
+--ROLES
+--Nombres de los roles definidos en tu base de datos
+select * from dict where lower(comments) like '%role%';
+select role from dba_roles;
+--Lista de roles concedidos a otros roles (rol concedido y rol al que se le concede)
+select role, granted_role from role_role_privs;
+--Lista de privilegios concedidos a roles
+select privilege, table_name, role from role_tab_privs;
+
+--PRIVILEGIOS
+--Lista de privilegios de tabla otorgados entre los usuarios 
+--creados en tu base de datos para la práctica de permisos (propietario, 
+--tabla, usuario con privilegio concedidos)
+select * from dict where lower(comments) like '%privilege%';
+select role, table_name, privilege from ROLE_TAB_PRIVS
+where upper(role) like '%ESTU%';
+
+--Lista de privilegios de columna otorgados entre los usuarios creados en tu base de datos para la práctica 
+--de permisos (propietario, tabla, columna, usuario con privilegio concedido)
+select * from dict where lower(comments) like '%colum%';
+select distinct owner propietario, table_name tabla, column_name columna, grantee Usuario from dba_col_privs where owner like '%CARLA%';
+
+--Lista de roles concedidos a usuarios
+select DISTINCT granted_role ROLE, grantee USUARIO from dba_role_privs;
+
+--TABLESPACES
+--Lista de ficheros de datos, con sus tablespaces (fichero,tablespace)
+select * from dict where lower(comments) like '%file%';
+select file_name DATOS, tablespace_name TABLESPACE from dba_data_files;
+
+--Lista de ficheros completa para realizar un backup de la base de datos: datafiles y controlfiles
+select * from dict where lower(comments) like '%datafile%';
+select name from v$datafile
+union
+select name from v$controlfile;
+
+--CUOTAS
+--Lista de usuarios y cuotas en tablespaces
+select * from dict where lower(comments) like '%quotas%';
+select username USUARIO, max_bytes CUOTA from dba_ts_quotas;
+
+--TABLAS 
+--Lista de tablas de un usuario, junto con el tablespace donde están almacenadas
+select * from dict where lower(comments) like '%quotas%';
+SELECT * FROM DBA_TABLES;
+select table_name TABLA, tablespace_name TABLESPACES from dba_tables where owner like '%CARLA%';

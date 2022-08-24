@@ -1,0 +1,15 @@
+;;; 
+Import: Release 18.0.0.0.0 - Production on Wed May 25 08:35:01 2022
+Version 18.3.0.0.0
+
+Copyright (c) 1982, 2018, Oracle and/or its affiliates.  All rights reserved.
+;;; 
+Connected to: Oracle Database 18c Enterprise Edition Release 18.0.0.0.0 - Production
+Master table "JUNIO"."SYS_IMPORT_FULL_01" successfully loaded/unloaded
+Starting "JUNIO"."SYS_IMPORT_FULL_01":  junio/******** directory=exp_imp dumpfile=exportacion.dmp logfile=importacion.log remap_schema=junio:copia_25_05 remap_table=meter_datos:detalles 
+Processing object type TABLE_EXPORT/TABLE/TABLE
+Processing object type TABLE_EXPORT/TABLE/TABLE_DATA
+. . imported "COPIA_25_05"."DETALLES"                    5.226 KB      16 rows
+Processing object type TABLE_EXPORT/TABLE/STATISTICS/TABLE_STATISTICS
+Processing object type TABLE_EXPORT/TABLE/STATISTICS/MARKER
+Job "JUNIO"."SYS_IMPORT_FULL_01" successfully completed at Wed May 25 08:35:27 2022 elapsed 0 00:00:23

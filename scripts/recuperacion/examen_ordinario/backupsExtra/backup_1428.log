@@ -1,0 +1,21 @@
+;;; 
+Export: Release 18.0.0.0.0 - Production on Wed Jun 15 14:28:22 2022
+Version 18.3.0.0.0
+
+Copyright (c) 1982, 2018, Oracle and/or its affiliates.  All rights reserved.
+;;; 
+Connected to: Oracle Database 18c Enterprise Edition Release 18.0.0.0.0 - Production
+Starting "CARLA_PRUEBA2"."SYS_EXPORT_SCHEMA_01":  carla_prueba2/******** directory=backupsExtra dumpfile=backup_1428.dmp logfile=backup_1428.log schemas=carla_prueba2 
+Processing object type SCHEMA_EXPORT/TABLE/TABLE_DATA
+Processing object type SCHEMA_EXPORT/TABLE/INDEX/STATISTICS/INDEX_STATISTICS
+Processing object type SCHEMA_EXPORT/TABLE/STATISTICS/TABLE_STATISTICS
+Processing object type SCHEMA_EXPORT/PRE_SCHEMA/PROCACT_SCHEMA
+Processing object type SCHEMA_EXPORT/TABLE/TABLE
+Processing object type SCHEMA_EXPORT/TABLE/COMMENT
+Processing object type SCHEMA_EXPORT/TABLE/INDEX/INDEX
+Processing object type SCHEMA_EXPORT/TABLE/CONSTRAINT/CONSTRAINT
+Master table "CARLA_PRUEBA2"."SYS_EXPORT_SCHEMA_01" successfully loaded/unloaded
+******************************************************************************
+Dump file set for CARLA_PRUEBA2.SYS_EXPORT_SCHEMA_01 is:
+  /home/alumno/scripts/recuperacion/examen_ordinario/backupsExtra/backup_1428.dmp
+Job "CARLA_PRUEBA2"."SYS_EXPORT_SCHEMA_01" successfully completed at Wed Jun 15 14:29:19 2022 elapsed 0 00:00:55

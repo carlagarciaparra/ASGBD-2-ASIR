@@ -1,0 +1,7 @@
+/dev/mapper/centos-root  47285700 31394000  15891700  67% /
+devtmpfs                  1923536        0   1923536   0% /dev
+tmpfs                     1940508  1032192    908316  54% /dev/shm
+tmpfs                     1940508     9180   1931328   1% /run
+tmpfs                     1940508        0   1940508   0% /sys/fs/cgroup
+/dev/sda1                 1038336   172928    865408  17% /boot
+tmpfs                      388104        0    388104   0% /run/user/1000
